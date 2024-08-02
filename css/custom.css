@@ -1,0 +1,9 @@
+.lang-menu {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.nl-simple .active {
+  color: blue !important;
+  font-weight: 900 !important;
+}

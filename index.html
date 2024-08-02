@@ -23,8 +23,8 @@
     <title>Minutesapps - Save minutes for your business and customers</title>
 
     <!-- FAVICON AND TOUCH ICONS -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/favicon_io/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon_io/favicon.ico" type="image/x-icon" />
     <link
       rel="apple-touch-icon"
       sizes="152x152"
@@ -75,7 +75,7 @@
     <link href="css/owl.carousel.min.css" rel="stylesheet" />
     <link href="css/owl.theme.default.min.css" rel="stylesheet" />
     <link href="css/lunar.css" rel="stylesheet" />
-
+    <link href="css/custom.css" rel="stylesheet" />
     <!-- ON SCROLL ANIMATION -->
     <link href="css/animate.css" rel="stylesheet" />
 
@@ -84,9 +84,9 @@
     <!-- <link href="css/crocus-theme.css" rel="stylesheet"> -->
     <!-- <link href="css/green-theme.css" rel="stylesheet"> -->
     <!-- <link href="css/magenta-theme.css" rel="stylesheet"> -->
-    <link href="css/pink-theme.css" rel="stylesheet" />
+    <!-- <link href="css/pink-theme.css" rel="stylesheet"> -->
     <!-- <link href="css/purple-theme.css" rel="stylesheet"> -->
-    <!-- <link href="css/skyblue-theme.css" rel="stylesheet"> -->
+    <link href="css/skyblue-theme.css" rel="stylesheet" />
     <!-- <link href="css/red-theme.css" rel="stylesheet"> -->
     <!-- <link href="css/violet-theme.css" rel="stylesheet"> -->
 
@@ -106,7 +106,7 @@
     <div id="page" class="page font--jakarta">
       <!-- HEADER
 			============================================= -->
-      <header id="header" class="tra-menu navbar-dark white-scroll">
+      <header id="header" class="tra-menu navbar-light white-scroll">
         <div class="header-wrapper">
           <!-- MOBILE HEADER -->
           <div class="wsmobileheader clearfix">
@@ -128,8 +128,8 @@
 
               <!-- HEADER WHITE LOGO -->
               <div class="desktoplogo">
-                <a href="#hero-2" class="logo-white"
-                  ><img src="images/logo-pink-white.png" alt="logo"
+                <a href="#hero-3" class="logo-white"
+                  ><img src="images/logo-black.png" alt="logo"
                 /></a>
               </div>
 
@@ -137,24 +137,26 @@
               <nav class="wsmenu clearfix">
                 <ul class="wsmenu-list nav-theme">
                   <!-- DROPDOWN SUB MENU -->
-                  <li class="nl-simple" aria-haspopup="true">
-                    <a href="#problem-section" class="h-link">PROBLEMS</a>
+                  <li aria-haspopup="true">
+                    <a href="#features-11" class="h-link">PROBLEMS</a>
                   </li>
 
+                  <!-- SIMPLE NAVIGATION LINK -->
                   <li class="nl-simple" aria-haspopup="true">
-                    <a href="#appointment-booking" class="h-link">SOLUTION</a>
+                    <a href="#features-12" class="h-link">SOLUTION</a>
                   </li>
-
                   <li class="nl-simple" aria-haspopup="true">
-                    <a href="#pricing-1" class="h-link">PRICING</a>
+                    <a href="#features-11" class="h-link">PRICING</a>
                   </li>
-
                   <li class="nl-simple" aria-haspopup="true">
-                    <a href="#testimonial-1" class="h-link">TESTIMONIAL</a>
+                    <a href="#reviews-2" class="h-link">TESTIMONIAL</a>
                   </li>
-
                   <li class="nl-simple" aria-haspopup="true">
-                    <a href="#features-12" class="h-link">CONTACT US</a>
+                    <a href="#contact-us" class="h-link">CONTACT US</a>
+                  </li>
+                  <li class="nl-simple lang-menu" aria-haspopup="true">
+                    <a href="#" class="h-link" id="en-lang">EN</a> |
+                    <a href="#" class="h-link active" id="id-lang">ID</a>
                   </li>
                 </ul>
               </nav>
@@ -167,418 +169,1390 @@
       </header>
       <!-- END HEADER -->
 
-      <section id="hero-2" class="bg--scroll hero-section">
+      <!-- HERO-3
+			============================================= -->
+      <section id="hero-3" class="bg--fixed hero-section">
         <div class="container">
           <div class="row d-flex align-items-center">
             <!-- HERO TEXT -->
-            <div class="col-md-6 order-first order-md-2">
-              <div class="hero-2-txt wow fadeInLeft">
+            <div class="col-md-6">
+              <div class="hero-3-txt color--white wow fadeInRight">
                 <!-- Title -->
-                <h2 class="s-32 w-700 color--black">
-                  Welcome to Minutes Apps, where we empower beauty service
-                  providers to take control of your business.
-                </h2>
+                <h2 class="s-30 w-700" id="welcome-header"></h2>
 
                 <!-- Text -->
-                <p class="p-lg">
-                  Our software sreamlines your operations, from appointment
-                  management to inventory tracking, so you can focus on what
-                  matters most - your clients.
-                </p>
+                <p class="p-lg" id="welcome-sub-header"></p>
 
                 <!-- HERO DIGITS -->
-                <div class="hero-digits">
-                  <!-- DIGIT BLOCK #1 -->
-                  <div id="hd-1-1" class="wow fadeInUp">
-                    <div class="hero-digits-block">
-                      <!-- Digit -->
-                      <a
-                        href="#banner-3"
-                        class="btn btn-sm r-04 btn--tra-black hover--theme"
-                      >
-                        BOOK A DEMO
-                      </a>
-                    </div>
-                  </div>
-                  <!-- END DIGIT BLOCK #1 -->
-
-                  <!-- DIGIT BLOCK #2 -->
-                  <div id="hd-1-2" class="wow fadeInUp">
-                    <div class="hero-digits-block">
-                      <!-- Digit -->
-                      <a
-                        href="#banner-3"
-                        class="btn btn-sm r-04 btn--tra-black hover--theme"
-                      >
-                        WATCH VIDEO
-                      </a>
-                    </div>
-                  </div>
-                  <!-- END DIGIT BLOCK #2 -->
-                </div>
+                <div class="btns-group mt-15">
+									<a href="#" class="btn r-04 btn--theme hover--black" id="book-a-demo"></a>
+									<a href="#" class="btn r-04 btn--tra-black hover--black" id="watch-video"></a>
+								</div>
                 <!-- END HERO DIGITS -->
               </div>
             </div>
+            <!-- END HERO TEXT -->
 
             <!-- HERO IMAGE -->
-            <div class="col-md-6 order-last order-md-2">
-              <div class="hero-2-img wow fadeInRight">
+            <div class="col-md-6">
+              <div class="hero-3-img wow fadeInLeft">
                 <img
                   class="img-fluid"
-                  src="images/minutes/hero-1.png"
+                  src="images/tablet-01.png"
                   alt="hero-image"
                 />
               </div>
             </div>
-
-            <!-- END HERO TEXT -->
           </div>
           <!-- End row -->
         </div>
         <!-- End container -->
       </section>
+      <!-- END HERO-3 -->
 
-      <section id="problem-section" class="bg--scroll hero-section">
+      <!-- FEATURES-11
+			============================================= -->
+      <section id="features-11" class="pt-100 features-section division">
         <div class="container">
-          <div class="row d-flex align-items-center">
-            <!-- HERO TEXT -->
-            <div class="col-md-6 order-first order-md-2">
-              <div class="hero-2-txt wow fadeInLeft">
+          <!-- SECTION TITLE -->
+          <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-9">
+              <div class="section-title mb-70">
+                <!-- Section ID -->
+                <span class="section-id">Endless Possibilities</span>
+
                 <!-- Title -->
-                <h2 class="s-32 w-700 color--black">
-                  Are you still strugling with
-                </h2>
+                <h2 class="s-50 w-700" id="contentTitle2"></h2>
 
                 <!-- Text -->
-                <p class="p-lg">
-                  Outdated booking systems? <br />
-                  Inefficient Scheduling? <br />
-                  Manual booling errors? <br />
-                  Messy customer recors? <br />
-                  Comission Managament challenges? <br />
-                  and time-consuming loyality program administration?
-                </p>
+                <p class="s-21 color--grey" id="subContentTitle27"></p>
+              </div>
+            </div>
+          </div>
 
-                <!-- HERO DIGITS -->
-                <div class="hero-digits">
-                  <h5 class="s-24 w-700">
-                    Upgrade to our system and say goodbye to these headches
-                  </h5>
+          <!-- FEATURES-11 WRAPPER -->
+          <div class="fbox-wrapper">
+            <div class="row row-cols-1 row-cols-md-2 rows-3">
+              <!-- FEATURE BOX #1 -->
+              <div class="col">
+                <div class="fbox-11 fb-1 wow fadeInUp">
+                  <!-- Icon -->
+                  <div class="fbox-ico-wrap">
+                    <div class="fbox-ico ico-50">
+                      <div class="shape-ico color--theme">
+                        <!-- Vector Icon -->
+                        <span class="flaticon-graphics"></span>
+
+                        <!-- Shape -->
+                        <svg
+                          viewBox="0 0 200 200"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M69.8,-23C76.3,-2.7,57.6,25.4,32.9,42.8C8.1,60.3,-22.7,67,-39.1,54.8C-55.5,42.7,-57.5,11.7,-48.6,-11.9C-39.7,-35.5,-19.8,-51.7,5.9,-53.6C31.7,-55.6,63.3,-43.2,69.8,-23Z"
+                            transform="translate(100 100)"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Icon -->
+
+                  <!-- Text -->
+                  <div class="fbox-txt">
+                    <h6 class="s-22 w-700" id="subContentTitle21"></h6>
+                    <p>
+                      Porta semper lacus cursus feugiat primis ultrice ligula
+                      risus ociis auctor and tempus feugiat impedit felis cursus
+                      auctor augue mauris blandit ipsum
+                    </p>
+                  </div>
                 </div>
-                <!-- END HERO DIGITS -->
+              </div>
+              <!-- END FEATURE BOX #1 -->
+
+              <!-- FEATURE BOX #2 -->
+              <div class="col">
+                <div class="fbox-11 fb-2 wow fadeInUp">
+                  <!-- Icon -->
+                  <div class="fbox-ico-wrap">
+                    <div class="fbox-ico ico-50">
+                      <div class="shape-ico color--theme">
+                        <!-- Vector Icon -->
+                        <span class="flaticon-idea"></span>
+
+                        <!-- Shape -->
+                        <svg
+                          viewBox="0 0 200 200"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M69.8,-23C76.3,-2.7,57.6,25.4,32.9,42.8C8.1,60.3,-22.7,67,-39.1,54.8C-55.5,42.7,-57.5,11.7,-48.6,-11.9C-39.7,-35.5,-19.8,-51.7,5.9,-53.6C31.7,-55.6,63.3,-43.2,69.8,-23Z"
+                            transform="translate(100 100)"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Icon -->
+
+                  <!-- Text -->
+                  <div class="fbox-txt">
+                    <h6 class="s-22 w-700" id="subContentTitle22"></h6>
+                    <p>
+                      Porta semper lacus cursus feugiat primis ultrice ligula
+                      risus ociis auctor and tempus feugiat impedit felis cursus
+                      auctor augue mauris blandit ipsum
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- END FEATURE BOX #2 -->
+
+              <!-- FEATURE BOX #3 -->
+              <div class="col">
+                <div class="fbox-11 fb-3 wow fadeInUp">
+                  <!-- Icon -->
+                  <div class="fbox-ico-wrap">
+                    <div class="fbox-ico ico-50">
+                      <div class="shape-ico color--theme">
+                        <!-- Vector Icon -->
+                        <span class="flaticon-graphic"></span>
+
+                        <!-- Shape -->
+                        <svg
+                          viewBox="0 0 200 200"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M69.8,-23C76.3,-2.7,57.6,25.4,32.9,42.8C8.1,60.3,-22.7,67,-39.1,54.8C-55.5,42.7,-57.5,11.7,-48.6,-11.9C-39.7,-35.5,-19.8,-51.7,5.9,-53.6C31.7,-55.6,63.3,-43.2,69.8,-23Z"
+                            transform="translate(100 100)"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Icon -->
+
+                  <!-- Text -->
+                  <div class="fbox-txt">
+                    <h6 class="s-22 w-700" id="subContentTitle23">Digital Marketing</h6>
+                    <p>
+                      Porta semper lacus cursus feugiat primis ultrice ligula
+                      risus ociis auctor and tempus feugiat impedit felis cursus
+                      auctor augue mauris blandit ipsum
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- END FEATURE BOX #3 -->
+
+              <!-- FEATURE BOX #4 -->
+              <div class="col">
+                <div class="fbox-11 fb-4 wow fadeInUp">
+                  <!-- Icon -->
+                  <div class="fbox-ico-wrap">
+                    <div class="fbox-ico ico-50">
+                      <div class="shape-ico color--theme">
+                        <!-- Vector Icon -->
+                        <span class="flaticon-wireframe"></span>
+
+                        <!-- Shape -->
+                        <svg
+                          viewBox="0 0 200 200"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M69.8,-23C76.3,-2.7,57.6,25.4,32.9,42.8C8.1,60.3,-22.7,67,-39.1,54.8C-55.5,42.7,-57.5,11.7,-48.6,-11.9C-39.7,-35.5,-19.8,-51.7,5.9,-53.6C31.7,-55.6,63.3,-43.2,69.8,-23Z"
+                            transform="translate(100 100)"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Icon -->
+
+                  <!-- Text -->
+                  <div class="fbox-txt">
+                    <h6 class="s-22 w-700" id="subContentTitle24"></h6>
+                    <p>
+                      Porta semper lacus cursus feugiat primis ultrice ligula
+                      risus ociis auctor and tempus feugiat impedit felis cursus
+                      auctor augue mauris blandit ipsum
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- END FEATURE BOX #4 -->
+
+              <!-- FEATURE BOX #5 -->
+              <div class="col">
+                <div class="fbox-11 fb-5 wow fadeInUp">
+                  <!-- Icon -->
+                  <div class="fbox-ico-wrap">
+                    <div class="fbox-ico ico-50">
+                      <div class="shape-ico color--theme">
+                        <!-- Vector Icon -->
+                        <span class="flaticon-trophy"></span>
+
+                        <!-- Shape -->
+                        <svg
+                          viewBox="0 0 200 200"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M69.8,-23C76.3,-2.7,57.6,25.4,32.9,42.8C8.1,60.3,-22.7,67,-39.1,54.8C-55.5,42.7,-57.5,11.7,-48.6,-11.9C-39.7,-35.5,-19.8,-51.7,5.9,-53.6C31.7,-55.6,63.3,-43.2,69.8,-23Z"
+                            transform="translate(100 100)"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Icon -->
+
+                  <!-- Text -->
+                  <div class="fbox-txt">
+                    <h6 class="s-22 w-700" id="subContentTitle25">Brand Design Identity</h6>
+                    <p>
+                      Porta semper lacus cursus feugiat primis ultrice ligula
+                      risus ociis auctor and tempus feugiat impedit felis cursus
+                      auctor augue mauris blandit ipsum
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- END FEATURE BOX #5 -->
+
+              <!-- FEATURE BOX #6 -->
+              <div class="col">
+                <div class="fbox-11 fb-6 wow fadeInUp">
+                  <!-- Icon -->
+                  <div class="fbox-ico-wrap">
+                    <div class="fbox-ico ico-50">
+                      <div class="shape-ico color--theme">
+                        <!-- Vector Icon -->
+                        <span class="flaticon-search-engine-1"></span>
+
+                        <!-- Shape -->
+                        <svg
+                          viewBox="0 0 200 200"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M69.8,-23C76.3,-2.7,57.6,25.4,32.9,42.8C8.1,60.3,-22.7,67,-39.1,54.8C-55.5,42.7,-57.5,11.7,-48.6,-11.9C-39.7,-35.5,-19.8,-51.7,5.9,-53.6C31.7,-55.6,63.3,-43.2,69.8,-23Z"
+                            transform="translate(100 100)"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Icon -->
+
+                  <!-- Text -->
+                  <div class="fbox-txt">
+                    <h6 class="s-22 w-700" id="subContentTitle26"></h6>
+                    <p>
+                      Porta semper lacus cursus feugiat primis ultrice ligula
+                      risus ociis auctor and tempus feugiat impedit felis cursus
+                      auctor augue mauris blandit ipsum
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- END FEATURE BOX #6 -->
+            </div>
+            <!-- End row -->
+          </div>
+          <!-- END FEATURES-11 WRAPPER -->
+        </div>
+        <!-- End container -->
+      </section>
+      <!-- END FEATURES-11 -->
+
+      <!-- BOX CONTENT
+			============================================= -->
+      <section id="lnk-1" class="pt-100 ws-wrapper content-section">
+        <div class="container">
+          <div class="bc-1-wrapper bg--02 bg--fixed r-16">
+            <div class="section-overlay">
+              <div class="row d-flex align-items-center">
+                <!-- TEXT BLOCK -->
+                <div class="col-md-6 order-last order-md-2">
+                  <div class="txt-block left-column wow fadeInRight">
+                    <!-- Section ID -->
+                    <span class="section-id">Strategies That Work</span>
+
+                    <!-- Title -->
+                    <h2 class="s-46 w-700">
+                      Quality traffic leads to quality customers!
+                    </h2>
+
+                    <!-- List -->
+                    <ul class="simple-list">
+                      <li class="list-item">
+                        <p>
+                          Cursus purus suscipit vitae cubilia magnis volute
+                          egestas vitae sapien turpis sodales magna
+                        </p>
+                      </li>
+
+                      <li class="list-item">
+                        <p class="mb-0">
+                          Tempor sapien quaerat an ipsum laoreet purus and
+                          sapien dolor an ultrice ipsum aliquam congue
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- END TEXT BLOCK -->
+
+                <!-- IMAGE BLOCK -->
+                <div class="col-md-6 order-first order-md-2">
+                  <div class="img-block right-column wow fadeInLeft">
+                    <img
+                      class="img-fluid"
+                      src="images/img-06.png"
+                      alt="content-image"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- End row -->
+            </div>
+            <!-- End section overlay -->
+          </div>
+          <!-- End content wrapper -->
+        </div>
+        <!-- End container -->
+      </section>
+      <!-- END BOX CONTENT -->
+
+      <!-- TEXT CONTENT
+			============================================= -->
+      <section class="pt-100 ct-02 content-section division">
+        <div class="container">
+          <!-- SECTION CONTENT (ROW) -->
+          <div class="row d-flex align-items-center">
+            <!-- IMAGE BLOCK -->
+            <div class="col-md-6">
+              <div class="img-block left-column wow fadeInRight">
+                <img
+                  class="img-fluid"
+                  src="images/img-09.png"
+                  alt="content-image"
+                />
               </div>
             </div>
 
-            <!-- HERO IMAGE -->
-            <div class="col-md-6 order-last order-md-2"></div>
+            <!-- TEXT BLOCK -->
+            <div class="col-md-6">
+              <div class="txt-block right-column wow fadeInLeft">
+                <!-- Section ID -->
+                <span class="section-id">Automatic Workflows</span>
 
-            <!-- END HERO TEXT -->
+                <!-- Title -->
+                <h2 class="s-46 w-700">Optimizing your website for success</h2>
+
+                <!-- Text -->
+                <p>
+                  Sodales tempor sapien quaerat ipsum undo congue laoreet turpis
+                  neque auctor turpis vitae dolor luctus placerat magna and
+                  ligula cursus purus vitae purus an ipsum suscipit
+                </p>
+
+                <!-- Small Title -->
+                <h5 class="s-24 w-700">Get more done in less time</h5>
+
+                <!-- List -->
+                <ul class="simple-list">
+                  <li class="list-item">
+                    <p>
+                      Sapien quaerat tempor an ipsum laoreet purus and sapien
+                      dolor an ultrice ipsum aliquam undo congue cursus dolor
+                    </p>
+                  </li>
+
+                  <li class="list-item">
+                    <p class="mb-0">
+                      Purus suscipit cursus vitae cubilia magnis volute egestas
+                      vitae sapien turpis ultrice auctor congue magna placerat
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- END TEXT BLOCK -->
           </div>
-          <!-- End row -->
-        </div>
-        <div class="problem-hero-img wow fadeInRight">
-          <img
-            class="img-fluid"
-            src="images/minutes/problem-hero-section.png"
-            alt="hero-image"
-          />
+          <!-- END SECTION CONTENT (ROW) -->
         </div>
         <!-- End container -->
       </section>
+      <!-- END TEXT CONTENT -->
 
-      <!-- END HERO-2 -->
+      <!-- FEATURES-2
+			============================================= -->
+      <section id="features-2" class="pt-100 features-section division">
+        <div class="container">
+          <!-- SECTION TITLE -->
+          <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-9">
+              <div class="section-title mb-80">
+                <!-- Title -->
+                <h2 class="s-50 w-700">The Complete Solutions</h2>
 
-      
-      <div>
-        <a href="#">APPOINTMENT & BOOKING</a>
-        <a href="#">POINT OF SALES</a>
-        <a href="#">LOYALITY PROGRAM</a>
-        <a href="#">REPORT & ANALITYCS</a>
-        <a href="#">MARKETING & SALES</a>
+                <!-- Text -->
+                <p class="s-21 color--grey">
+                  Ligula risus auctor tempus magna feugiat lacinia.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FEATURES-2 WRAPPER -->
+          <div class="fbox-wrapper text-center">
+            <div class="row row-cols-1 row-cols-md-3">
+              <!-- FEATURE BOX #1 -->
+              <div class="col">
+                <div class="fbox-2 fb-1 wow fadeInUp">
+                  <!-- Image -->
+                  <div class="fbox-img gr--whitesmoke h-175">
+                    <img
+                      class="img-fluid"
+                      src="images/f_04.png"
+                      alt="feature-image"
+                    />
+                  </div>
+
+                  <!-- Text -->
+                  <div class="fbox-txt">
+                    <h6 class="s-22 w-700">Quick Integration</h6>
+                    <p>
+                      Luctus egestas augue undo ultrice aliquam in lacus congue
+                      dapibus
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- END FEATURE BOX #1 -->
+
+              <!-- FEATURE BOX #2 -->
+              <div class="col">
+                <div class="fbox-2 fb-2 wow fadeInUp">
+                  <!-- Image -->
+                  <div class="fbox-img gr--whitesmoke h-175">
+                    <img
+                      class="img-fluid"
+                      src="images/f_05.png"
+                      alt="feature-image"
+                    />
+                  </div>
+
+                  <!-- Text -->
+                  <div class="fbox-txt">
+                    <h6 class="s-22 w-700">Effortless Integration</h6>
+                    <p>
+                      Tempor laoreet augue undo ultrice aliquam in lacusq luctus
+                      feugiat
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- END FEATURE BOX #2 -->
+
+              <!-- FEATURE BOX #3 -->
+              <div class="col">
+                <div class="fbox-2 fb-3 wow fadeInUp">
+                  <!-- Image -->
+                  <div class="fbox-img gr--whitesmoke h-175">
+                    <img
+                      class="img-fluid"
+                      src="images/f_02.png"
+                      alt="feature-image"
+                    />
+                  </div>
+
+                  <!-- Text -->
+                  <div class="fbox-txt">
+                    <h6 class="s-22 w-700">Advanced Analytics</h6>
+                    <p>
+                      Egestas luctus augue undo ultrice aliquam in lacus feugiat
+                      cursus
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- END FEATURE BOX #3 -->
+            </div>
+            <!-- End row -->
+          </div>
+          <!-- END FEATURES-2 WRAPPER -->
+        </div>
+        <!-- End container -->
+      </section>
+      <!-- END FEATURES-2 -->
+
+      <!-- BOX CONTENT
+			============================================= -->
+      <section id="lnk-2" class="pt-100 ws-wrapper content-section">
+        <div class="container">
+          <div class="bc-5-wrapper bg--04 hidd bg--scroll r-16">
+            <div class="section-overlay">
+              <!-- SECTION TITLE -->
+              <div class="row justify-content-center">
+                <div class="col-md-11 col-lg-9">
+                  <div class="section-title wow fadeInUp mb-60">
+                    <!-- Title -->
+                    <h2 class="s-50 w-700">
+                      Build a customer-centric marketing strategy
+                    </h2>
+
+                    <!-- Text -->
+                    <p class="p-xl">
+                      Aliquam a augue suscipit luctus neque purus ipsum neque
+                      diam dolor primis libero tempus, blandit and cursus varius
+                      and magnis sodales
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- IMAGE BLOCK -->
+              <div class="row justify-content-center">
+                <div class="col">
+                  <div
+                    class="bc-5-img bc-5-tablet img-block-hidden video-preview wow fadeInUp"
+                  >
+                    <!-- Play Icon -->
+                    <a
+                      class="video-popup1"
+                      href="https://www.youtube.com/embed/SZEflIVnhH8"
+                    >
+                      <div class="video-btn video-btn-xl bg--theme">
+                        <div class="video-block-wrapper">
+                          <span class="flaticon-play-button"></span>
+                        </div>
+                      </div>
+                    </a>
+
+                    <!-- Preview Image -->
+                    <img
+                      class="img-fluid"
+                      src="images/tablet-02.png"
+                      alt="content-image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End section overlay -->
+          </div>
+          <!-- End content wrapper -->
+        </div>
+        <!-- End container -->
+      </section>
+      <!-- END BOX CONTENT -->
+
+      <!-- STATISTIC-1
+			============================================= -->
+      <div id="statistic-1" class="py-100 statistic-section division">
+        <div class="container">
+          <!-- STATISTIC-1 WRAPPER -->
+          <div class="statistic-1-wrapper">
+            <div class="row justify-content-md-center row-cols-1 row-cols-md-3">
+              <!-- STATISTIC BLOCK #1 -->
+              <div class="col">
+                <div id="sb-1-1" class="wow fadeInUp">
+                  <div class="statistic-block">
+                    <!-- Digit -->
+                    <div class="statistic-block-digit text-center">
+                      <h2 class="s-46 statistic-number">
+                        <span class="count-element">89</span>k
+                      </h2>
+                    </div>
+
+                    <!-- Text -->
+                    <div class="statistic-block-txt color--grey">
+                      <p class="p-md">
+                        Porta justo integer and velna vitae auctor
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END STATISTIC BLOCK #1 -->
+
+              <!-- STATISTIC BLOCK #2 -->
+              <div class="col">
+                <div id="sb-1-2" class="wow fadeInUp">
+                  <div class="statistic-block">
+                    <!-- Digit -->
+                    <div class="statistic-block-digit text-center">
+                      <h2 class="s-46 statistic-number">
+                        <span class="count-element">76</span>%
+                      </h2>
+                    </div>
+
+                    <!-- Text -->
+                    <div class="statistic-block-txt color--grey">
+                      <p class="p-md">Ligula magna suscipit vitae and rutrum</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END STATISTIC BLOCK #2 -->
+
+              <!-- STATISTIC BLOCK #3 -->
+              <div class="col">
+                <div id="sb-1-3" class="wow fadeInUp">
+                  <div class="statistic-block">
+                    <!-- Digit -->
+                    <div class="statistic-block-digit text-center">
+                      <h2 class="s-46 statistic-number">
+                        <span class="count-element">4</span>.<span
+                          class="count-element"
+                          >93</span
+                        >
+                      </h2>
+                    </div>
+
+                    <!-- Text -->
+                    <div class="statistic-block-txt color--grey">
+                      <p class="p-md">
+                        Sagittis congue augue egestas an egestas
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END STATISTIC BLOCK #3 -->
+            </div>
+            <!-- End row -->
+          </div>
+          <!-- END STATISTIC-1 WRAPPER -->
+        </div>
+        <!-- End container -->
       </div>
+      <!-- END STATISTIC-1 -->
 
-      <section id="appointment-booking" class="py-100 ct-02 content-section division">
-				<div class="container">
+      <!-- DIVIDER LINE -->
+      <hr class="divider" />
 
+      <!-- FEATURES-12
+			============================================= -->
+      <section
+        id="features-12"
+        class="shape--bg shape--white-500 pt-100 features-section division"
+      >
+        <div class="container">
+          <div class="row d-flex align-items-center">
+            <!-- TEXT BLOCK -->
+            <div class="col-md-5">
+              <div class="txt-block left-column wow fadeInRight">
+                <!-- Section ID -->
+                <span class="section-id">One-Stop Solution</span>
 
-					<!-- SECTION CONTENT (ROW) -->	
-					<div class="row d-flex align-items-center">
+                <!-- Title -->
+                <h2 class="s-46 w-700">Smart solutions, real-time results</h2>
 
-
-						<!-- IMAGE BLOCK -->
-						<div class="col-md-6">
-							<div class="img-block left-column wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
-								<img class="img-fluid" src="images/minutes/page-4-1.png" alt="content-image">
-							</div>
-						</div>
-
-
-						<!-- TEXT BLOCK -->	
-						<div class="col-md-6">
-							<div class="txt-block right-column wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
-
-
-
-								<!-- Title -->	
-								<h2 class="s-46 w-700">APPOINTMENT BOOKING</h2>
-
-								<!-- Text -->	
-								<p>
-                  Enable clients to easily schedule appointments using their mobile devices
-								</p>
+                <!-- Text -->
                 <p>
-                  for enchanced convenience and accessibility
+                  Sodales tempor sapien quaerat ipsum and congue undo laoreet
+                  turpis neque auctor turpis vitae dolor luctus placerat magna
+                  ligula and cursus vitae
                 </p>
 
-
-
-							</div>
-						</div>	<!-- END TEXT BLOCK -->	
-
-
-					</div>	<!-- END SECTION CONTENT (ROW) -->	
-
-
-				</div>	   <!-- End container -->
-			</section>
-
-      <section id="pricing-1" class="gr--whitesmoke pb-40 inner-page-hero pricing-section">
-				<div class="container">
-
-
-					<!-- SECTION TITLE -->	
-					<div class="row justify-content-center">	
-						<div class="col-md-10 col-lg-8">
-							<div class="section-title mb-70">	
-
-
-								<!-- TOGGLE BUTTON -->
-								<div class="toggle-btn ext-toggle-btn toggle-btn-md mt-30">
-									<span class="toggler-txt">Billed monthly</span>
-							        <label class="switch-wrap">
-							          <input type="checkbox" id="checbox" onclick="check()">
-							          <span class="switcher bg--grey switcher--theme">
-											<span class="show-annual"></span>
-								   			<span class="show-monthly"></span>
-							          </span>
-							        </label>
-							        <span class="toggler-txt">Billed yearly</span>
-
-							    </div>
-
-
-							</div>	
-						</div>
-					</div>	<!-- END SECTION TITLE -->	
-
-
-					<!-- PRICING TABLES -->
-					<div class="pricing-1-wrapper">
-						<div class="row row-cols-1 row-cols-md-3">
-
-
-
-							<!-- BASIC PLAN -->
-							<div class="col">
-								<div id="pt-1-2" class="p-table pricing-1-table bg--white-100 block-shadow r-12 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-
-
-									<!-- TABLE HEADER -->
-									<div class="pricing-table-header">
-
-										<!-- Title -->
-										<h5 class="s-24">Basic</h5>
-
-										<!-- Price -->	
-										<div class="price">								
-
-											<!-- Monthly Price -->	
-											<div class="price2" style="display: block;">
-												<!-- <sup class="color--black">IDR</sup>								 -->
-												<span class="color--black">100.000</span>
-												<sup class="validity color--grey">&nbsp;/ mo</sup>
-											</div>
-
-											<!-- Yearly Price -->	
-											<div class="price1" style="display: none;">
-												<!-- <sup class="color--black">IDR</sup>								 -->
-												<span class="color--black">1.200.000</span>
-												<sup class="validity color--grey">&nbsp;/ yr</sup>
-
-
-											</div>
-
-											<!-- Text -->	
-											<p class="color--grey">
-                        Designed for those just starting out, 
-                        offering essential reporting tools 
-                        to track your business performance
-                        and make informed decisions effortlessly.
-                      </p>
-
-										</div>	<!-- End Price -->	
-
-
-									</div>	<!-- END TABLE HEADER -->
-
-
-									<!-- PRICING FEATURES -->
-									<ul class="pricing-features color--black ico-10 ico--green mt-25">
-										<li><p><span class="flaticon-check"></span> Mobile Booking</p></li>
-										<li><p><span class="flaticon-check"></span> Point of Sales</p></li>
-										<li><p><span class="flaticon-check"></span> Advanced Reporting</p></li>
-									</ul>
-
-                  <!-- Button -->
-                  <a href="#" class="pt-btn btn r-04 btn--theme hover--theme">Get Started</a>
-
-
-								</div>
-							</div>	<!-- END BASIC PLAN -->
-
-							<!-- Loyalty PLAN -->
-							<div class="col">
-								<div id="pt-1-2" class="p-table pricing-1-table bg--white-100 block-shadow r-12 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-
-
-									<!-- TABLE HEADER -->
-									<div class="pricing-table-header">
-
-										<!-- Title -->
-										<h5 class="s-24">Loyalty</h5>
-
-										<!-- Price -->	
-										<div class="price">								
-
-											<!-- Monthly Price -->	
-											<div class="price2" style="display: block;">
-												<!-- <sup class="color--black">IDR</sup>								 -->
-												<span class="color--black">200.000</span>
-												<sup class="validity color--grey">&nbsp;/ mo</sup>
-											</div>
-
-											<!-- Yearly Price -->	
-											<div class="price1" style="display: none;">
-												<!-- <sup class="color--black">IDR</sup>								 -->
-												<span class="color--black">2.400.000</span>
-												<sup class="validity color--grey">&nbsp;/ yr</sup>
-
-
-											</div>
-
-											<!-- Text -->	
-											<p class="color--grey">
-                        Perfect for businesses looking to deepen customer relationships,
-                        offering advanced CRM tools
-                        to personalize interactions
-                        and foster long-lasting connections.
-                      </p>
-
-										</div>	<!-- End Price -->	
-
-
-									</div>	<!-- END TABLE HEADER -->
-
-
-									<!-- PRICING FEATURES -->
-									<ul class="pricing-features color--black ico-10 ico--green mt-25">
-										<li><p><span class="flaticon-check"></span> Mobile Booking</p></li>
-										<li><p><span class="flaticon-check"></span> Point of Sales</p></li>
-										<li><p><span class="flaticon-check"></span> Advanced Reporting</p></li>
-										<li><p><span class="flaticon-check"></span> CRM</p></li>
-										<li><p><span class="flaticon-check"></span> Commission Management Loyalty Program</p></li>
-									</ul>
-
-                  <!-- Button -->
-                  <a href="#" class="pt-btn btn r-04 btn--theme hover--theme">Get Started</a>
-
-
-								</div>
-							</div>	<!-- END Loyalty PLAN -->
-
-							<!-- FULL PLAN -->
-							<div class="col">
-								<div id="pt-1-2" class="p-table pricing-1-table bg--white-100 block-shadow r-12 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-
-
-									<!-- TABLE HEADER -->
-									<div class="pricing-table-header">
-
-										<!-- Title -->
-										<h5 class="s-24">FULL</h5>
-
-										<!-- Price -->	
-										<div class="price">								
-
-											<!-- Monthly Price -->	
-											<div class="price2" style="display: block;">
-												<!-- <sup class="color--black">IDR</sup>								 -->
-												<span class="color--black">300.000</span>
-												<sup class="validity color--grey">&nbsp;/ mo</sup>
-											</div>
-
-											<!-- Yearly Price -->	
-											<div class="price1" style="display: none;">
-												<!-- <sup class="color--black">IDR</sup>								 -->
-												<span class="color--black">3.600.000</span>
-												<sup class="validity color--grey">&nbsp;/ yr</sup>
-
-
-											</div>
-
-											<!-- Text -->	
-											<p class="color--grey">
-                        Designed for ambitious owners
-                        who prioritize efficiency and growth, providing powerful tools
-                        and insights to propel your business to new heights.
-                      </p>
-
-										</div>	<!-- End Price -->	
-
-
-									</div>	<!-- END TABLE HEADER -->
-
-
-									<!-- PRICING FEATURES -->
-									<ul class="pricing-features color--black ico-10 ico--green mt-25">
-										<li><p><span class="flaticon-check"></span> Mobile Booking</p></li>
-										<li><p><span class="flaticon-check"></span> Point of Sales</p></li>
-										<li><p><span class="flaticon-check"></span> Advanced Reporting</p></li>
-										<li><p><span class="flaticon-check"></span> CRM</p></li>
-										<li><p><span class="flaticon-check"></span> Commission Management</p></li>
-										<li><p><span class="flaticon-check"></span> Loyalty Program</p></li>
-										<li><p><span class="flaticon-check"></span> Membership Management</p></li>
-										<li><p><span class="flaticon-check"></span> Subscription Service</p></li>
-									</ul>
-
-                  <!-- Button -->
-                  <a href="#" class="pt-btn btn r-04 btn--theme hover--theme">Get Started</a>
-
-
-								</div>
-							</div>	<!-- END FULL PLAN -->
-
-
-						</div>
-					</div>	<!-- PRICING TABLES -->
-
-				
-				</div>	   <!-- End container -->
-			</section>
-
-
+                <!-- List -->
+                <ul class="simple-list">
+                  <li class="list-item">
+                    <p class="mb-0">
+                      Tempor sapien quaerat undo ipsum laoreet diam purus sapien
+                      a dolor ociis ultrice ipsum aliquam congue a dolor cursus
+                      congue varius magnis
+                    </p>
+                  </li>
+                </ul>
+
+                <!-- Link -->
+                <div class="txt-block-tra-link mt-25">
+                  <a href="#features-5" class="tra-link ico-20 color--theme">
+                    The smarter way to work <span class="flaticon-next"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- END TEXT BLOCK -->
+
+            <!-- FEATURES-12 WRAPPER -->
+            <div class="col-md-7">
+              <div class="fbox-12-wrapper wow fadeInLeft">
+                <div class="row">
+                  <div class="col-md-6">
+                    <!-- FEATURE BOX #1 -->
+                    <div
+                      id="fb-12-1"
+                      class="fbox-12 bg--white-100 block-shadow r-12 mb-10"
+                    >
+                      <!-- Icon -->
+                      <div class="fbox-ico ico-50">
+                        <div class="shape-ico color--theme">
+                          <!-- Vector Icon -->
+                          <span class="flaticon-layers-1"></span>
+
+                          <!-- Shape -->
+                          <svg
+                            viewBox="0 0 200 200"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M69.8,-23C76.3,-2.7,57.6,25.4,32.9,42.8C8.1,60.3,-22.7,67,-39.1,54.8C-55.5,42.7,-57.5,11.7,-48.6,-11.9C-39.7,-35.5,-19.8,-51.7,5.9,-53.6C31.7,-55.6,63.3,-43.2,69.8,-23Z"
+                              transform="translate(100 100)"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <!-- End Icon -->
+
+                      <!-- Text -->
+                      <div class="fbox-txt">
+                        <h5 class="s-19 w-700 content3Menu1"></h5>
+                        <p id="content3Menu1Desc"></p>
+                      </div>
+                    </div>
+
+                    <!-- FEATURE BOX #2 -->
+                    <div
+                      id="fb-12-2"
+                      class="fbox-12 bg--white-100 block-shadow r-12"
+                    >
+                      <!-- Icon -->
+                      <div class="fbox-ico ico-50">
+                        <div class="shape-ico color--theme">
+                          <!-- Vector Icon -->
+                          <span class="flaticon-tutorial"></span>
+
+                          <!-- Shape -->
+                          <svg
+                            viewBox="0 0 200 200"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M69.8,-23C76.3,-2.7,57.6,25.4,32.9,42.8C8.1,60.3,-22.7,67,-39.1,54.8C-55.5,42.7,-57.5,11.7,-48.6,-11.9C-39.7,-35.5,-19.8,-51.7,5.9,-53.6C31.7,-55.6,63.3,-43.2,69.8,-23Z"
+                              transform="translate(100 100)"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <!-- End Icon -->
+
+                      <!-- Text -->
+                      <div class="fbox-txt">
+                        <h5 class="s-19 w-700 content3Menu2"></h5>
+                        <p id="content3Menu2Desc"></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <!-- FEATURE BOX #3 -->
+                    <div
+                      id="fb-12-3"
+                      class="fbox-12 bg--white-100 block-shadow r-12 mb-10"
+                    >
+                      <!-- Icon -->
+                      <div class="fbox-ico ico-50">
+                        <div class="shape-ico color--theme">
+                          <!-- Vector Icon -->
+                          <span class="flaticon-pay-per-click"></span>
+
+                          <!-- Shape -->
+                          <svg
+                            viewBox="0 0 200 200"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M69.8,-23C76.3,-2.7,57.6,25.4,32.9,42.8C8.1,60.3,-22.7,67,-39.1,54.8C-55.5,42.7,-57.5,11.7,-48.6,-11.9C-39.7,-35.5,-19.8,-51.7,5.9,-53.6C31.7,-55.6,63.3,-43.2,69.8,-23Z"
+                              transform="translate(100 100)"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <!-- End Icon -->
+
+                      <!-- Text -->
+                      <div class="fbox-txt">
+                        <h5 class="s-19 w-700 content3Menu3"></h5>
+                        <p id="content3Menu3Desc"></p>
+                      </div>
+                    </div>
+
+                    <!-- FEATURE BOX #4 -->
+                    <div
+                      id="fb-12-4"
+                      class="fbox-12 bg--white-100 block-shadow r-12 mb-10"
+                    >
+                      <!-- Icon -->
+                      <div class="fbox-ico ico-50">
+                        <div class="shape-ico color--theme">
+                          <!-- Vector Icon -->
+                          <span class="flaticon-taxes"></span>
+
+                          <!-- Shape -->
+                          <svg
+                            viewBox="0 0 200 200"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M69.8,-23C76.3,-2.7,57.6,25.4,32.9,42.8C8.1,60.3,-22.7,67,-39.1,54.8C-55.5,42.7,-57.5,11.7,-48.6,-11.9C-39.7,-35.5,-19.8,-51.7,5.9,-53.6C31.7,-55.6,63.3,-43.2,69.8,-23Z"
+                              transform="translate(100 100)"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <!-- End Icon -->
+
+                      <!-- Text -->
+                      <div class="fbox-txt">
+                        <h5 class="s-19 w-700 content3Menu4"></h5>
+                        <p id="content3Menu4Desc"></p>
+                      </div>
+                    </div>
+
+                    <!-- FEATURE BOX #4 -->
+                    <div
+                      id="fb-12-4"
+                      class="fbox-12 bg--white-100 block-shadow r-12"
+                    >
+                      <!-- Icon -->
+                      <div class="fbox-ico ico-50">
+                        <div class="shape-ico color--theme">
+                          <!-- Vector Icon -->
+                          <span class="flaticon-taxes"></span>
+
+                          <!-- Shape -->
+                          <svg
+                            viewBox="0 0 200 200"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M69.8,-23C76.3,-2.7,57.6,25.4,32.9,42.8C8.1,60.3,-22.7,67,-39.1,54.8C-55.5,42.7,-57.5,11.7,-48.6,-11.9C-39.7,-35.5,-19.8,-51.7,5.9,-53.6C31.7,-55.6,63.3,-43.2,69.8,-23Z"
+                              transform="translate(100 100)"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <!-- End Icon -->
+
+                      <!-- Text -->
+                      <div class="fbox-txt">
+                        <h5 class="s-19 w-700 content3Menu5"></h5>
+                        <p id="content3Menu5Desc"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End row -->
+            </div>
+            <!-- END FEATURES-12 WRAPPER -->
+          </div>
+          <!-- End row -->
+        </div>
+        <!-- End container -->
+      </section>
+      <!-- END FEATURES-12 -->
+
+      <!-- TEXT CONTENT
+			============================================= -->
+      <section class="py-100 ct-02 content-section division">
+        <div class="container">
+          <!-- SECTION CONTENT (ROW) -->
+          <div class="row d-flex align-items-center">
+            <!-- IMAGE BLOCK -->
+            <div class="col-md-6">
+              <div class="img-block left-column wow fadeInRight">
+                <img
+                  class="img-fluid"
+                  src="images/img-10.png"
+                  alt="content-image"
+                />
+              </div>
+            </div>
+
+            <!-- TEXT BLOCK -->
+            <div class="col-md-6">
+              <div class="txt-block right-column wow fadeInLeft">
+                <!-- Section ID -->
+                <span class="section-id">Enhance Engagement</span>
+
+                <!-- Title -->
+                <h2 class="s-46 w-700">Engage your most valuable visitors</h2>
+
+                <!-- Text -->
+                <p>
+                  Sodales tempor sapien quaerat ipsum undo congue laoreet turpis
+                  neque auctor turpis vitae dolor luctus placerat magna and
+                  ligula cursus purus vitae purus an ipsum suscipit
+                </p>
+
+                <!-- List -->
+                <ul class="simple-list">
+                  <li class="list-item">
+                    <p>
+                      Sapien quaerat tempor an ipsum laoreet purus and sapien
+                      dolor an ultrice ipsum aliquam undo congue cursus dolor
+                    </p>
+                  </li>
+
+                  <li class="list-item">
+                    <p class="mb-0">
+                      Purus suscipit cursus vitae cubilia magnis volute egestas
+                      vitae sapien turpis ultrice auctor congue magna placerat
+                    </p>
+                  </li>
+                </ul>
+
+                <!-- Link -->
+                <div class="txt-block-tra-link mt-25">
+                  <a
+                    href="#integrations-2"
+                    class="tra-link ico-20 color--theme"
+                  >
+                    All-in-one platform <span class="flaticon-next"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- END TEXT BLOCK -->
+          </div>
+          <!-- END SECTION CONTENT (ROW) -->
+        </div>
+        <!-- End container -->
+      </section>
+      <!-- END TEXT CONTENT -->
+
+      <!-- TEXT CONTENT
+			============================================= -->
+      <section class="bg--white-400 py-100 ct-04 content-section division">
+        <div class="container">
+          <!-- SECTION CONTENT (ROW) -->
+          <div class="row d-flex align-items-center">
+            <!-- TEXT BLOCK -->
+            <div class="col-md-6 order-last order-md-2">
+              <div class="txt-block left-column wow fadeInRight">
+                <!-- CONTENT BOX #1 -->
+                <div class="cbox-2 process-step">
+                  <!-- Icon -->
+                  <div class="ico-wrap">
+                    <div class="cbox-2-ico bg--theme color--white">1</div>
+                    <span class="cbox-2-line"></span>
+                  </div>
+
+                  <!-- Text -->
+                  <div class="cbox-2-txt">
+                    <h5 class="s-22 w-700">Enhanced Security Features</h5>
+                    <p>
+                      Ligula risus auctor tempus feugiat dolor lacinia nemo
+                      purus in lipsum purus sapien quaerat a primis viverra
+                      tellus vitae luctus dolor ipsum neque ligula quaerat
+                    </p>
+                  </div>
+                </div>
+                <!-- END CONTENT BOX #1 -->
+
+                <!-- CONTENT BOX #2 -->
+                <div class="cbox-2 process-step">
+                  <!-- Icon -->
+                  <div class="ico-wrap">
+                    <div class="cbox-2-ico bg--theme color--white">2</div>
+                    <span class="cbox-2-line"></span>
+                  </div>
+
+                  <!-- Text -->
+                  <div class="cbox-2-txt">
+                    <h5 class="s-22 w-700">No Personal Data Collected</h5>
+                    <p>
+                      Ligula risus auctor tempus feugiat dolor lacinia nemo
+                      purus in lipsum purus sapien quaerat a primis viverra
+                      tellus vitae luctus dolor ipsum neque ligula quaerat
+                    </p>
+                  </div>
+                </div>
+                <!-- END CONTENT BOX #2 -->
+
+                <!-- CONTENT BOX #3 -->
+                <div class="cbox-2 process-step">
+                  <!-- Icon -->
+                  <div class="ico-wrap">
+                    <div class="cbox-2-ico bg--theme color--white">3</div>
+                  </div>
+
+                  <!-- Text -->
+                  <div class="cbox-2-txt">
+                    <h5 class="s-22 w-700">Weekly Email Reports</h5>
+                    <p class="mb-0">
+                      Ligula risus auctor tempus feugiat dolor lacinia nemo
+                      purus in lipsum purus sapien quaerat a primis viverra
+                      tellus vitae luctus dolor ipsum n eque ligula quaerat
+                    </p>
+                  </div>
+                </div>
+                <!-- END CONTENT BOX #3 -->
+              </div>
+            </div>
+            <!-- END TEXT BLOCK -->
+
+            <!-- IMAGE BLOCK -->
+            <div class="col-md-6 order-first order-md-2">
+              <div class="img-block wow fadeInLeft">
+                <img
+                  class="img-fluid"
+                  src="images/tablet-02.png"
+                  alt="content-image"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- END SECTION CONTENT (ROW) -->
+        </div>
+        <!-- End container -->
+      </section>
+      <!-- END TEXT CONTENT -->
+
+      <!-- TEXT CONTENT
+			============================================= -->
+      <section id="lnk-3" class="pt-100 ct-02 content-section division">
+        <div class="container">
+          <!-- SECTION CONTENT (ROW) -->
+          <div class="row d-flex align-items-center">
+            <!-- IMAGE BLOCK -->
+            <div class="col-md-6">
+              <div class="img-block left-column wow fadeInRight">
+                <img
+                  class="img-fluid"
+                  src="images/img-02.png"
+                  alt="content-image"
+                />
+              </div>
+            </div>
+
+            <!-- TEXT BLOCK -->
+            <div class="col-md-6">
+              <div class="txt-block right-column wow fadeInLeft">
+                <!-- Section ID -->
+                <span class="section-id">Easy Integration</span>
+
+                <!-- Title -->
+                <h2 class="s-46 w-700">
+                  Plug your essential tools in few clicks
+                </h2>
+
+                <!-- List -->
+                <ul class="simple-list">
+                  <li class="list-item">
+                    <p>
+                      Cursus purus suscipit vitae cubilia magnis volute egestas
+                      vitae sapien turpis sodales magna undo aoreet primis
+                    </p>
+                  </li>
+
+                  <li class="list-item">
+                    <p class="mb-0">
+                      Tempor sapien quaerat an ipsum laoreet purus and sapien
+                      dolor an ultrice ipsum aliquam undo congue dolor cursus
+                      purus congue and ipsum purus sapien a blandit
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- END TEXT BLOCK -->
+          </div>
+          <!-- END SECTION CONTENT (ROW) -->
+        </div>
+        <!-- End container -->
+      </section>
+      <!-- END TEXT CONTENT -->
+
+      <!-- FEATURES-5
+			============================================= -->
+      <section id="features-5" class="pt-100 features-section division">
+        <div class="container">
+          <!-- SECTION TITLE -->
+          <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-9">
+              <div class="section-title mb-80">
+                <!-- Title -->
+                <h2 class="s-50 w-700">
+                  Reach your audience through social media marketing
+                </h2>
+
+                <!-- Text -->
+                <p class="s-21 color--grey">
+                  Ligula risus auctor tempus magna feugiat lacinia.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FEATURES-5 WRAPPER -->
+          <div class="fbox-wrapper text-center">
+            <div class="row d-flex align-items-center">
+              <!-- FEATURE BOX #1 -->
+              <div class="col-md-6">
+                <div class="fbox-5 fb-1 gr--smoke r-16 wow fadeInUp">
+                  <!-- Text -->
+                  <div class="fbox-txt order-last order-md-2">
+                    <h5 class="s-26 w-700">Data Integrations</h5>
+                    <p>
+                      Aliquam a augue suscipit luctus diam neque purus ipsum
+                      neque and dolor primis libero
+                    </p>
+                  </div>
+
+                  <!-- Image -->
+                  <div class="fbox-5-img order-first order-md-2">
+                    <img
+                      class="img-fluid"
+                      src="images/f_06.png"
+                      alt="feature-image"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- END FEATURE BOX #1 -->
+
+              <!-- FEATURE BOX #2 -->
+              <div class="col-md-6">
+                <div class="fbox-5 fb-2 gr--smoke r-16 wow fadeInUp">
+                  <!-- Image -->
+                  <div class="fbox-5-img">
+                    <img
+                      class="img-fluid"
+                      src="images/f_07.png"
+                      alt="feature-image"
+                    />
+                  </div>
+
+                  <!-- Text -->
+                  <div class="fbox-txt">
+                    <h5 class="s-26 w-700">Research Solutions</h5>
+                    <p>
+                      Aliquam a augue suscipit luctus diam neque purus ipsum
+                      neque and dolor primis libero
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- END FEATURE BOX #2 -->
+            </div>
+            <!-- End row -->
+          </div>
+          <!-- END FEATURES-5 WRAPPER -->
+        </div>
+        <!-- End container -->
+      </section>
+      <!-- END FEATURES-5 -->
+
+      <!-- TESTIMONIALS-2
+			============================================= -->
+      <section id="reviews-2" class="pt-100 reviews-section">
+        <div class="container">
+          <!-- SECTION TITLE -->
+          <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-9">
+              <div class="section-title mb-70">
+                <!-- Title -->
+                <h2 class="s-50 w-700">Our Happy Customers</h2>
+
+                <!-- Text -->
+                <p class="s-21 color--grey">
+                  Ligula risus auctor tempus magna feugiat lacinia.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- TESTIMONIALS-2 WRAPPER -->
+          <div class="reviews-2-wrapper rel shape--02 shape--whitesmoke">
+            <div class="row align-items-center row-cols-1 row-cols-md-2">
+              <!-- TESTIMONIAL #1 -->
+              <div class="col">
+                <div
+                  id="rw-2-1"
+                  class="review-2 bg--white-100 block-shadow r-08"
+                >
+                  <!-- Quote Icon -->
+                  <div class="review-ico ico-65">
+                    <span class="flaticon-quote"></span>
+                  </div>
+
+                  <!-- Text -->
+                  <div class="review-txt">
+                    <!-- Text -->
+                    <p class="testiCyberhair"></p>
+
+                    <!-- Author -->
+                    <div class="author-data clearfix">
+                      <!-- Avatar -->
+                      <div class="review-avatar">
+                        <img
+                          src="images/minutes/testi-3.png"
+                          alt="review-avatar"
+                        />
+                      </div>
+
+                      <!-- Data -->
+                      <div class="review-author">
+                        <h6 class="s-18 w-700 ">Tya Ardita</h6>
+                        <p class="p-sm">PR & Marketing Cyberhair Salon</p>
+                      </div>
+                    </div>
+                    <!-- End Author -->
+                  </div>
+                  <!-- End Text -->
+                </div>
+              </div>
+              <!-- END TESTIMONIAL #1 -->
+
+              <!-- TESTIMONIAL #2 -->
+              <div class="col">
+                <div
+                  id="rw-2-2"
+                  class="review-2 bg--white-100 block-shadow r-08"
+                >
+                  <!-- Quote Icon -->
+                  <div class="review-ico ico-65">
+                    <span class="flaticon-quote"></span>
+                  </div>
+
+                  <!-- Text -->
+                  <div class="review-txt">
+                    <!-- Text -->
+                    <p class="testiWaxhouse"></p>
+
+                    <!-- Author -->
+                    <div class="author-data clearfix">
+                      <!-- Avatar -->
+                      <div class="review-avatar">
+                        <img
+                          src="images/minutes/testi-1.png"
+                          alt="review-avatar"
+                        />
+                      </div>
+
+                      <!-- Data -->
+                      <div class="review-author">
+                        <h6 class="s-18 w-700">Helura</h6>
+                        <p class="p-sm">Founders of Waxhaus</p>
+                      </div>
+                    </div>
+                    <!-- End Author -->
+                  </div>
+                  <!-- End Text -->
+                </div>
+              </div>
+              <!-- END TESTIMONIAL #2 -->
+
+              <!-- TESTIMONIAL #3 -->
+              <div class="col">
+                <div
+                  id="rw-2-3"
+                  class="review-2 bg--white-100 block-shadow r-08"
+                >
+                  <!-- Quote Icon -->
+                  <div class="review-ico ico-65">
+                    <span class="flaticon-quote"></span>
+                  </div>
+
+                  <!-- Text -->
+                  <div class="review-txt">
+                    <!-- Text -->
+                    <p class="testiDbp"></p>
+
+                    <!-- Author -->
+                    <div class="author-data clearfix">
+                      <!-- Avatar -->
+                      <div class="review-avatar">
+                        <img
+                          src="images/minutes/testi-4.png"
+                          alt="review-avatar"
+                        />
+                      </div>
+
+                      <!-- Data -->
+                      <div class="review-author">
+                        <h6 class="s-18 w-700">Mustafa Walker</h6>
+                        <p class="p-sm">Co-Founders of Di Bawah Pohon Barbershop</p>
+                      </div>
+                    </div>
+                    <!-- End Author -->
+                  </div>
+                  <!-- End Text -->
+                </div>
+              </div>
+              <!-- END TESTIMONIAL #3 -->
+
+              <!-- TESTIMONIAL #4 -->
+              <div class="col">
+                <div
+                  id="rw-2-4"
+                  class="review-2 bg--white-100 block-shadow r-08"
+                >
+                  <!-- Quote Icon -->
+                  <div class="review-ico ico-65">
+                    <span class="flaticon-quote"></span>
+                  </div>
+
+                  <!-- Text -->
+                  <div class="review-txt">
+                    <!-- Text -->
+                    <p class="testiKeluncum"> </p>
+
+                    <!-- Author -->
+                    <div class="author-data clearfix">
+                      <!-- Avatar -->
+                      <div class="review-avatar">
+                        <img
+                          src="images//minutes/testi-5.png"
+                          alt="review-avatar"
+                        />
+                      </div>
+
+                      <!-- Data -->
+                      <div class="review-author">
+                        <h6 class="s-18 w-700">Prihandoko Triswiyanto</h6>
+                        <p class="p-sm">Owner of Keluncum Barbershop</p>
+                      </div>
+                    </div>
+                    <!-- End Author -->
+                  </div>
+                  <!-- End Text -->
+                </div>
+              </div>
+              <!-- END TESTIMONIAL #4 -->
+            </div>
+            <!-- End row -->
+          </div>
+          <!-- END TESTIMONIALS-2 WRAPPER -->
+        </div>
+        <!-- End container -->
+      </section>
+      <!-- END TESTIMONIALS-2 -->
 
       <!-- BRANDS-1
 			============================================= -->
-      <div id="brands-1" class="py-100 brands-section">
+      <div id="brands-1" class="pt-80 brands-section">
         <div class="container">
-          <div class="row justify-content-center">	
-						<div class="col-md-10 col-lg-9">
-							<div class="brands-title mb-50">
-								<h5 class="s-17">Trusted since 2015 and used by over a thousand companies</h5>
-							</div>
-						</div>
-					</div>
+          <!-- BRANDS TITLE -->
+          <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-9">
+              <div class="brands-title mb-50">
+                <h5 class="s-19">Trusted since 2015 and used by over a thousand companies</h5>
+              </div>
+            </div>
+          </div>
+
           <!-- BRANDS CAROUSEL -->
           <div class="row">
             <div class="col text-center">
@@ -672,76 +1646,6 @@
                       alt="brand-logo"
                   /></a>
                 </div>
-                <div class="brand-logo">
-                  <a href="#"
-                    ><img
-                      class="img-fluid"
-                      src="images/minutes/brand/brand-10.png"
-                      alt="brand-logo"
-                  /></a>
-                </div>
-
-                <!-- BRAND LOGO IMAGE -->
-                <div class="brand-logo">
-                  <a href="#"
-                    ><img
-                      class="img-fluid"
-                      src="images/minutes/brand/brand-11.png"
-                      alt="brand-logo"
-                  /></a>
-                </div>
-
-                <!-- BRAND LOGO IMAGE -->
-                <div class="brand-logo">
-                  <a href="#"
-                    ><img
-                      class="img-fluid"
-                      src="images/minutes/brand/brand-12.png"
-                      alt="brand-logo"
-                  /></a>
-                </div>
-
-                <!-- BRAND LOGO IMAGE -->
-                <div class="brand-logo">
-                  <a href="#"
-                    ><img
-                      class="img-fluid"
-                      src="images/minutes/brand/brand-13.png"
-                      alt="brand-logo"
-                  /></a>
-                </div>
-
-                <!-- BRAND LOGO IMAGE -->
-                <div class="brand-logo">
-                  <a href="#"
-                    ><img
-                      class="img-fluid"
-                      src="images/minutes/brand/brand-14.png"
-                      alt="brand-logo"
-                  /></a>
-                </div>
-
-                <!-- BRAND LOGO IMAGE -->
-                <div class="brand-logo">
-                  <a href="#"
-                    ><img
-                      class="img-fluid"
-                      src="images/minutes/brand/brand-15.png"
-                      alt="brand-logo"
-                  /></a>
-                </div>
-
-                <!-- BRAND LOGO IMAGE -->
-                <div class="brand-logo">
-                  <a href="#"
-                    ><img
-                      class="img-fluid"
-                      src="images/minutes/brand/brand-16.png"
-                      alt="brand-logo"
-                  /></a>
-                </div>
-
-
               </div>
             </div>
           </div>
@@ -751,53 +1655,295 @@
       </div>
       <!-- END BRANDS-1 -->
 
-      <!-- DIVIDER LINE -->
-      <hr class="divider" />
+      <!-- INTEGRATIONS-2
+			============================================= -->
+      <section id="integrations-2" class="pt-100 integrations-section">
+        <div class="container">
+          <!-- INTEGRATIONS-2 WRAPPER -->
+          <div class="integrations-2-wrapper bg--white-400 r-12 text-center">
+            <!-- SECTION TITLE -->
+            <div class="row justify-content-center">
+              <div class="col-md-10 col-lg-9">
+                <div class="section-title mb-50">
+                  <!-- Title -->
+                  <h2 class="s-50 w-700">
+                    Automate your workflow with our integrations
+                  </h2>
 
-      <section id="testimonial-1" class=" ct-02 content-section division">
-				<div class="container">
+                  <!-- Text -->
+                  <p class="s-21 color--grey">
+                    Ligula risus auctor tempus magna feugiat lacinia.
+                  </p>
+                </div>
+              </div>
+            </div>
 
+            <!-- TOOLS ROW -->
+            <div class="row row-cols-1 row-cols-sm-3 row-cols-md-5">
+              <!-- TOOL #1 -->
+              <div class="col">
+                <a href="#" class="in_tool it-1 r-12 wow fadeInUp">
+                  <!-- Logo -->
+                  <div
+                    class="in_tool_logo ico-65 bg--white-100 block-shadow r-12"
+                  >
+                    <img
+                      class="img-fluid"
+                      src="images/png_icons/tool-1.png"
+                      alt="brand-logo"
+                    />
+                  </div>
 
-					<!-- SECTION CONTENT (ROW) -->	
-					<div class="row d-flex align-items-center">
+                  <!-- Title -->
+                  <h6 class="s-17 w-700">Zapier</h6>
+                </a>
+              </div>
+              <!-- END TOOL #1 -->
 
+              <!-- TOOL #2 -->
+              <div class="col">
+                <a href="#" class="in_tool it-2 r-12 wow fadeInUp">
+                  <!-- Logo -->
+                  <div
+                    class="in_tool_logo ico-65 bg--white-100 block-shadow r-12"
+                  >
+                    <img
+                      class="img-fluid"
+                      src="images/png_icons/tool-2.png"
+                      alt="brand-logo"
+                    />
+                  </div>
 
-						<!-- IMAGE BLOCK -->
-						<div class="col-md-6">
-							<div class="img-block left-column wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
-								<img class="img-fluid" src="images/minutes/page-11.png" alt="content-image">
-							</div>
-						</div>
+                  <!-- Title -->
+                  <h6 class="s-17 w-700">Google Analytics</h6>
+                </a>
+              </div>
+              <!-- END TOOL #2 -->
 
+              <!-- TOOL #3 -->
+              <div class="col">
+                <a href="#" class="in_tool it-3 r-12 wow fadeInUp">
+                  <!-- Logo -->
+                  <div
+                    class="in_tool_logo ico-65 bg--white-100 block-shadow r-12"
+                  >
+                    <img
+                      class="img-fluid"
+                      src="images/png_icons/tool-3.png"
+                      alt="brand-logo"
+                    />
+                  </div>
 
-						<!-- TEXT BLOCK -->	
-						<div class="col-md-6">
-							<div class="txt-block right-column wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+                  <!-- Title -->
+                  <h6 class="s-17 w-700">Amplitude</h6>
+                </a>
+              </div>
+              <!-- END TOOL #3 -->
 
+              <!-- TOOL #4 -->
+              <div class="col">
+                <a href="#" class="in_tool it-4 r-12 wow fadeInUp">
+                  <!-- Logo -->
+                  <div
+                    class="in_tool_logo ico-65 bg--white-100 block-shadow r-12"
+                  >
+                    <img
+                      class="img-fluid"
+                      src="images/png_icons/tool-4.png"
+                      alt="brand-logo"
+                    />
+                  </div>
 
+                  <!-- Title -->
+                  <h6 class="s-17 w-700">Hubspot</h6>
+                </a>
+              </div>
+              <!-- END TOOL #4 -->
 
-								<!-- Title -->	
-								<h2 class="s-46 w-700">Cindy Fransisca</h2>
-                <span class="section-id">Founder of Pomelo House</span>
+              <!-- TOOL #5 -->
+              <div class="col">
+                <a href="#" class="in_tool it-5 r-12 wow fadeInUp">
+                  <!-- Logo -->
+                  <div
+                    class="in_tool_logo ico-65 bg--white-100 block-shadow r-12"
+                  >
+                    <img
+                      class="img-fluid"
+                      src="images/png_icons/tool-5.png"
+                      alt="brand-logo"
+                    />
+                  </div>
 
-								<!-- Text -->	
-								<p>
-                  Already subscribed for 4 years.Minutes works really well for beauty salons like Pomelo House.The program is easy to useand the regular updates keep all the details up to date. Great app!
-								</p>
-							</div>
-						</div>	<!-- END TEXT BLOCK -->	
+                  <!-- Title -->
+                  <h6 class="s-17 w-700">MailChimp</h6>
+                </a>
+              </div>
+              <!-- END TOOL #5 -->
+            </div>
+            <!-- END TOOLS ROW -->
 
+            <!-- MORE BUTTON -->
+            <div class="row">
+              <div class="col">
+                <div class="more-btn text-center mt-60 wow fadeInUp">
+                  <a
+                    href="integrations.html"
+                    class="btn btn--tra-grey hover--theme"
+                    >View all integrations</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END INTEGRATIONS-2 WRAPPER -->
+        </div>
+        <!-- End container -->
+      </section>
+      <!-- END INTEGRATIONS-2 -->
 
-					</div>	<!-- END SECTION CONTENT (ROW) -->	
+      <!-- TEXT CONTENT
+			============================================= -->
+      <section class="pt-100 ct-01 content-section division">
+        <div class="container">
+          <!-- SECTION CONTENT (ROW) -->
+          <div class="row d-flex align-items-center">
+            <!-- TEXT BLOCK -->
+            <div class="col-md-6 order-last order-md-2">
+              <div class="txt-block left-column wow fadeInRight">
+                <!-- Section ID -->
+                <span class="section-id">Easy Onboarding</span>
 
+                <!-- Title -->
+                <h2 class="s-46 w-700">Achieve more with better workflows</h2>
 
-				</div>	   <!-- End container -->
-			</section>
+                <!-- Text -->
+                <p>
+                  Nemo ipsam egestas volute turpis egestas ipsum and purus
+                  sapien ultrice an aliquam quaerat ipsum augue turpis sapien
+                  cursus congue magna purus quaerat at ligula purus egestas
+                  magna cursus undo varius purus magnis sapien quaerat
+                </p>
 
-      <!-- DIVIDER LINE -->
-      <hr class="divider" />
+                <!-- Small Title -->
+                <h5 class="s-24 w-700">Get more done in less time</h5>
 
-      <section id="newsletter-1" class="newsletter-section">
+                <!-- List -->
+                <ul class="simple-list">
+                  <li class="list-item">
+                    <p>
+                      Sapien quaerat tempor an ipsum laoreet purus and sapien
+                      dolor an ultrice ipsum aliquam undo congue cursus dolor
+                    </p>
+                  </li>
+
+                  <li class="list-item">
+                    <p class="mb-0">
+                      Purus suscipit cursus vitae cubilia magnis volute egestas
+                      vitae sapien turpis ultrice auctor congue magna placerat
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- END TEXT BLOCK -->
+
+            <!-- IMAGE BLOCK -->
+            <div class="col-md-6 order-first order-md-2">
+              <div class="img-block right-column wow fadeInLeft">
+                <img
+                  class="img-fluid"
+                  src="images/img-05.png"
+                  alt="content-image"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- END SECTION CONTENT (ROW) -->
+        </div>
+        <!-- End container -->
+      </section>
+      <!-- END TEXT CONTENT -->
+
+      <!-- TEXT CONTENT
+			============================================= -->
+      <section class="pt-100 ct-02 content-section division">
+        <div class="container">
+          <!-- SECTION CONTENT (ROW) -->
+          <div class="row d-flex align-items-center">
+            <!-- IMAGE BLOCK -->
+            <div class="col-md-6">
+              <div class="img-block left-column wow fadeInRight">
+                <img
+                  class="img-fluid"
+                  src="images/img-08.png"
+                  alt="content-image"
+                />
+              </div>
+            </div>
+
+            <!-- TEXT BLOCK -->
+            <div class="col-md-6">
+              <div class="txt-block right-column wow fadeInLeft">
+                <!-- TEXT BOX -->
+                <div class="txt-box">
+                  <!-- Title -->
+                  <h5 class="s-24 w-700">Advanced Analytics Review</h5>
+
+                  <!-- Text -->
+                  <p>
+                    Sodales tempor sapien quaerat ipsum undo congue laoreet
+                    turpis neque auctor turpis vitae dolor luctus placerat magna
+                    and ligula cursus purus vitae purus an ipsum suscipit
+                  </p>
+                </div>
+                <!-- END TEXT BOX -->
+
+                <!-- TEXT BOX -->
+                <div class="txt-box mb-0">
+                  <!-- Title -->
+                  <h5 class="s-24 w-700">Email Marketing Campaigns</h5>
+
+                  <!-- Text -->
+                  <p>
+                    Tempor sapien sodales quaerat ipsum undo congue laoreet
+                    turpis neque auctor turpis vitae dolor luctus placerat magna
+                    and ligula cursus purus an ipsum vitae suscipit purus
+                  </p>
+
+                  <!-- List -->
+                  <ul class="simple-list">
+                    <li class="list-item">
+                      <p>
+                        Tempor sapien quaerat an ipsum laoreet purus and sapien
+                        dolor an ultrice ipsum aliquam undo congue dolor cursus
+                      </p>
+                    </li>
+
+                    <li class="list-item">
+                      <p class="mb-0">
+                        Cursus purus suscipit vitae cubilia magnis volute
+                        egestas vitae sapien turpis ultrice auctor congue magna
+                        placerat
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <!-- END TEXT BOX -->
+              </div>
+            </div>
+            <!-- END TEXT BLOCK -->
+          </div>
+          <!-- END SECTION CONTENT (ROW) -->
+        </div>
+        <!-- End container -->
+      </section>
+      <!-- END TEXT CONTENT -->
+
+    
+      <!-- END FAQs-3 -->
+      <hr class="divider" style="margin-top: 60px !important; margin-bottom: 60px !important;" />
+
+      <section id="contact-us" class="newsletter-section">
 				<div class="newsletter-overlay">
 					<div class="container">
 						<div class="row d-flex align-items-center row-cols-1 row-cols-lg-2">
@@ -836,9 +1982,11 @@
 				</div>     <!-- End newsletter-overlay -->
 			</section>
 
+
+      
       <!-- FOOTER-3
 			============================================= -->
-      <footer id="footer-3" class="pt-100 footer">
+      <footer id="footer-3" class="pt-100 footer ft-3-ntr">
         <div class="container">
           <!-- FOOTER CONTENT -->
           <div class="row">
@@ -854,7 +2002,7 @@
             </div>
 
             <!-- FOOTER LINKS -->
-            <div class="col-sm-4 col-md-3 col-xl-2">
+            <div class="col-sm-4 col-lg-3 col-xl-2">
               <div class="footer-links fl-1">
                 <!-- Title -->
                 <h6 class="s-17 w-700">Company</h6>
@@ -865,13 +2013,13 @@
                     <p><a href="about.html">About Us</a></p>
                   </li>
                   <li>
-                    <p><a href="careers.html">Careers</a></p>
-                  </li>
-                  <li>
                     <p><a href="blog-listing.html">Our Blog</a></p>
                   </li>
                   <li>
-                    <p><a href="contacts.html">Contact Us</a></p>
+                    <p><a href="testimonials.html">Customers</a></p>
+                  </li>
+                  <li>
+                    <p><a href="#">Community</a></p>
                   </li>
                 </ul>
               </div>
@@ -879,7 +2027,7 @@
             <!-- END FOOTER LINKS -->
 
             <!-- FOOTER LINKS -->
-            <div class="col-sm-4 col-md-3 col-xl-2">
+            <div class="col-sm-4 col-lg-2">
               <div class="footer-links fl-2">
                 <!-- Title -->
                 <h6 class="s-17 w-700">Product</h6>
@@ -890,7 +2038,7 @@
                     <p><a href="features.html">Integration</a></p>
                   </li>
                   <li>
-                    <p><a href="reviews.html">Customers</a></p>
+                    <p><a href="download.html">What's New</a></p>
                   </li>
                   <li>
                     <p><a href="pricing-1.html">Pricing</a></p>
@@ -904,7 +2052,7 @@
             <!-- END FOOTER LINKS -->
 
             <!-- FOOTER LINKS -->
-            <div class="col-sm-4 col-md-3 col-xl-2">
+            <div class="col-sm-4 col-lg-3 col-xl-2">
               <div class="footer-links fl-3">
                 <!-- Title -->
                 <h6 class="s-17 w-700">Legal</h6>
@@ -928,35 +2076,35 @@
             </div>
             <!-- END FOOTER LINKS -->
 
-            <!-- FOOTER LINKS -->
-            <div class="col-sm-6 col-md-3">
-              <div class="footer-links fl-4">
+            <!-- FOOTER NEWSLETTER FORM -->
+            <div class="col-sm-10 col-md-8 col-lg-4 col-xl-3">
+              <div class="footer-form">
                 <!-- Title -->
-                <h6 class="s-17 w-700">Connect With Us</h6>
+                <h6 class="s-17 w-700">Follow the Best</h6>
 
-                <!-- Mail Link -->
-                <p class="footer-mail-link ico-25">
-                  <a href="mailto:yourdomain@mail.com">hello@yourdomain.com</a>
-                </p>
+                <!-- Newsletter Form Input -->
+                <form class="newsletter-form">
+                  <div class="input-group r-06">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email Address"
+                      required
+                      id="s-email"
+                    />
+                    <span class="input-group-btn ico-15">
+                      <button type="submit" class="btn color--theme">
+                        <span class="flaticon-right-arrow-1"></span>
+                      </button>
+                    </span>
+                  </div>
 
-                <!-- Social Links -->
-                <ul class="footer-socials ico-25 text-center clearfix">
-                  <li>
-                    <a href="#"><span class="flaticon-facebook"></span></a>
-                  </li>
-                  <li>
-                    <a href="#"><span class="flaticon-twitter"></span></a>
-                  </li>
-                  <li>
-                    <a href="#"><span class="flaticon-github"></span></a>
-                  </li>
-                  <li>
-                    <a href="#"><span class="flaticon-dribbble"></span></a>
-                  </li>
-                </ul>
+                  <!-- Newsletter Form Notification -->
+                  <label for="s-email" class="form-notification"></label>
+                </form>
               </div>
             </div>
-            <!-- END FOOTER LINKS -->
+            <!-- END FOOTER NEWSLETTER FORM -->
           </div>
           <!-- END FOOTER CONTENT -->
 
@@ -975,16 +2123,22 @@
                 </div>
               </div>
 
-              <!-- FOOTER SECONDARY LINK -->
+              <!-- FOOTER SOCIALS -->
               <div class="col">
-                <div class="bottom-secondary-link ico-15 text-end">
-                  <p class="p-sm">
-                    <a href="https://themeforest.net/user/dsathemes/portfolio"
-                      >Made with <span class="flaticon-heart"></span> by
-                      @DSAThemes</a
-                    >
-                  </p>
-                </div>
+                <ul class="bottom-footer-socials ico-20 text-end">
+                  <li>
+                    <a href="#"><span class="flaticon-facebook"></span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="flaticon-twitter"></span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="flaticon-instagram"></span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="flaticon-youtube"></span></a>
+                  </li>
+                </ul>
               </div>
             </div>
             <!-- End row -->
@@ -1032,4 +2186,130 @@
 			})();
 		</script>
 		--></body>
+  <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+  <script>
+    let key = "langData";
+    let langData = localStorage.getItem(key);
+
+    if (langData === null || langData === "EN") {
+      enLanguage();
+    } else {
+      idLanguage();
+    }
+
+    $(document).on("click", "#en-lang", () => {
+      enLanguage();
+      return false;
+    });
+
+    $(document).on("click", "#id-lang", () => {
+      idLanguage();
+      return false;
+    });
+
+    function enLanguage() {
+      localStorage.setItem(key, "EN");
+      $("#id-lang").removeClass("active");
+      $("#en-lang").addClass("active");
+      localStorage.setItem(key, "EN");
+      $.getJSON("data_en.json", function (data) {
+        setLanguage(data);
+      }).catch((error) => console.error("Error fetching JSON:", error));
+    }
+
+    function idLanguage() {
+      localStorage.setItem(key, "ID");
+      $("#id-lang").addClass("active");
+      $("#en-lang").removeClass("active");
+      $.getJSON("data_id.json", function (data) {
+        setLanguage(data);
+      }).catch((error) => console.error("Error fetching JSON:", error));
+    }
+
+    function setLanguage(data) {
+      $("#welcome-header").html(data.welcome);
+      $("#welcome-sub-header").html(data.welcomeSubTitle);
+      $("#book-a-demo").html(data.bookADemo);
+      $("#watch-video").html(data.watchVideo);
+      $("#contentTitle2").html(data.contentTitle2);
+      $("#subContentTitle21").html(data.subContentTitle21);
+      $("#subContentTitle22").html(data.subContentTitle22);
+      $("#subContentTitle23").html(data.subContentTitle23);
+      $("#subContentTitle24").html(data.subContentTitle24);
+      $("#subContentTitle25").html(data.subContentTitle25);
+      $("#subContentTitle26").html(data.subContentTitle26);
+      $("#subContentTitle27").html(data.subContentTitle27);
+      $(".content3Menu1").html(data.content3Menu1);
+      $(".content3Menu2").html(data.content3Menu2);
+      $(".content3Menu3").html(data.content3Menu3);
+      $(".content3Menu4").html(data.content3Menu4);
+      $(".content3Menu5").html(data.content3Menu5);
+      $("#content3Menu1Desc").html(data.content3Menu1Desc);
+      $("#content3Menu2Desc").html(data.content3Menu2Desc);
+      $("#content3Menu3Desc").html(data.content3Menu3Desc);
+      $("#content3Menu4Desc").html(data.content3Menu3Desc);
+      $("#content3Menu5Desc").html(data.content3Menu3Desc);
+      $(".contact-1").html(data.contact1);
+      $(".contact-2").html(data.contact2);
+      $(".menu-1").html(data.menu1);
+      $(".menu-2").html(data.menu2);
+      $(".menu-3").html(data.menu3);
+      $(".menu-4").html(data.menu4);
+      $(".menu-5").html(data.menu5);
+      $("#price1").html(data.price1);
+      $("#price2").html(data.price2);
+      $("#price3").html(data.price3);
+      $(".testiKeluncum").html(data.testiKeluncum);
+      $(".testiCyberhair").html(data.testiCyberhair);
+      $(".testiWaxhouse").html(data.testiWaxhouse);
+      $(".testiDbp").html(data.testiDbp);
+      $(".testiPemelo").html(data.testiPemelo);
+    }
+
+    $(".slider").bxSlider({
+      pagerCustom: "#bx-pager",
+      controls: false,
+    });
+
+    $(".testi-slider").bxSlider({
+      pager: false,
+    });
+
+    $(document).on("click", "a.btn-get-started", function () {
+      $("#registerPackage").val($(this).attr("data-package")).change();
+    });
+
+    $(document).on("click", "#btnGetStarted", function () {
+      if (
+        $("#registerName").val() === "" ||
+        $("#registerEmail").val() === "" ||
+        $("#registerPhone").val() === "" ||
+        $("#registerBusinessName").val() === "" ||
+        $("#registerBusinessCategory").val() === "" ||
+        $("#registerBusinessLocation").val() === ""
+      ) {
+        alert("Please fill in all the fields");
+      } else {
+        openWhatsApp();
+      }
+    });
+    function openWhatsApp() {
+      let name = $("#registerName").val();
+      let email = $("#registerEmail").val();
+      let phone = $("#registerPhone").val();
+      let package = $("#registerPackage").val();
+      let message =
+        "Name: " +
+        name +
+        "\nEmail: " +
+        email +
+        "\nPhone: " +
+        phone +
+        "\nPackage: " +
+        package;
+      let phoneNumber = "+6285769000007";
+      let whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + message;
+      window.open(whatsappUrl, "_blank");
+    }
+  </script> 
 </html>
