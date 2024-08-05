@@ -23,7 +23,6 @@
   <link rel="icon" href="images/favicon_io/favicon.ico" type="image/x-icon" />
 
   <!-- GOOGLE FONTS -->
-    rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
@@ -36,6 +35,7 @@
   <link href="css/flaticon.css" rel="stylesheet" />
 
   <!-- PLUGINS STYLESHEET -->
+  <link id="effect" href="css/dropdown-effects/fade-down.css" media="all" rel="stylesheet">
   <link href="css/menu.css" rel="stylesheet" />
   <link href="css/magnific-popup.css" rel="stylesheet" />
   <link href="css/owl.carousel.min.css" rel="stylesheet" />
@@ -47,18 +47,11 @@
 
   <!-- TEMPLATE CSS -->
   <link href="css/skyblue-theme.css" rel="stylesheet" />
-
   <!-- RESPONSIVE CSS -->
   <link href="css/responsive.css" rel="stylesheet" />
 </head>
 
 <body>
-  <!-- PRELOADER SPINNER
-		============================================= -->
-  <div id="loading" class="loading--theme">
-    <div id="loading-center"><span class="loader"></span></div>
-  </div>
-
   <!-- PAGE CONTENT
 		============================================= -->
   <div id="page" class="page font--jakarta">
@@ -106,10 +99,16 @@
                 <li class="nl-simple" aria-haspopup="true">
                   <a href="#contact-us" class="h-link">CONTACT US</a>
                 </li>
-                <li class="nl-simple lang-menu" aria-haspopup="true">
+                <li aria-haspopup="true"><a href="#" class="h-link" id="language"> <span class="wsarrow"></span></a>
+                  <ul class="sub-menu">
+                    <li aria-haspopup="true"><a href="#" id="en-lang">ENGLISH</a></li>
+                    <li aria-haspopup="true"><a href="#" id="id-lang">INDONESIAN</a></li>
+                  </ul>
+                </li>
+                <!-- <li class="nl-simple lang-menu" aria-haspopup="true">
                   <a href="#" class="h-link" id="en-lang">EN</a> |
                   <a href="#" class="h-link active" id="id-lang">ID</a>
-                </li>
+                </li> -->
               </ul>
             </nav>
             <!-- END MAIN MENU -->
@@ -138,7 +137,8 @@
               <!-- HERO DIGITS -->
               <div class="btns-group mt-15">
                 <a href="#" class="btn r-04 btn--theme hover--black" id="book-a-demo"></a>
-                <a href="https://wa.me/6285769000007?text=Deskripsi pesan" class="btn r-04 btn--tra-white hover--white" id="watch-video"></a>
+                <a href="https://wa.me/6285769000007?text=Deskripsi pesan" class="btn r-04 btn--tra-white hover--white"
+                  id="watch-video"></a>
               </div>
               <!-- END HERO DIGITS -->
             </div>
@@ -224,7 +224,7 @@
                     <div class="shape-ico color--theme">
                       <!-- Vector Icon -->
                       <!-- <span class="flaticon-idea"></span> -->
-                       <span><img src="images/Problems-Inefficient-Scheduling.png" alt=""></span>
+                      <span><img src="images/Problems-Inefficient-Scheduling.png" alt=""></span>
 
                       <!-- Shape -->
                       <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -465,7 +465,7 @@
                       <!-- Text -->
                       <div class="fbox-txt">
                         <h5 class="s-19 w-700 content3Menu1"></h5>
-                        <p id="content3Menu1Desc"></p>
+                        <p class="content3Menu1Desc"></p>
                       </div>
                     </div>
                   </a>
@@ -583,7 +583,7 @@
                   <!-- Title -->
                   <h2 class="s-46 w-700 content3Menu1"></h2>
 
-                  <p id="content3Menu1Desc"></p>
+                  <p class="content3Menu1Desc"></p>
                 </div>
               </div>
               <!-- END TEXT BLOCK -->
@@ -614,7 +614,7 @@
           <!-- IMAGE BLOCK -->
           <div class="col-md-6">
             <div class="img-block left-column wow fadeInRight">
-              <img class="img-fluid" src="images/Loyalty-Program-Section.png" alt="content-image" />
+              <img class="img-fluid" src="images/Point-of-Sales-Section.png" alt="content-image" />
             </div>
           </div>
 
@@ -628,7 +628,7 @@
               <h2 class="s-46 w-700 content3Menu2"></h2>
 
               <!-- Text -->
-              <p id="content3Menu2Desc"></p>
+              <p class="content3Menu2Desc"></p>
             </div>
           </div>
           <!-- END TEXT BLOCK -->
@@ -641,83 +641,84 @@
 
     <!-- FEATURES-2
 			============================================= -->
-   <!-- BOX CONTENT
+    <!-- BOX CONTENT
 			============================================= -->
-      <section id="menu-3" class="pt-100 ws-wrapper content-section">
-        <div class="container">
-          <div class="bc-1-wrapper bg--02 bg--fixed r-16">
-            <div class="section-overlay">
-              <div class="row d-flex align-items-center">
-                <!-- TEXT BLOCK -->
-                <div class="col-md-6 order-last order-md-2">
-                  <div class="txt-block left-column wow fadeInRight">
-                    <!-- Section ID -->
-                    <span class="section-id">Strategies That Work</span>
-  
-                    <!-- Title -->
-                    <h2 class="s-46 w-700 content3Menu3"></h2>
-  
-                    <p id="content3Menu3Desc"></p>
-                  </div>
-                </div>
-                <!-- END TEXT BLOCK -->
-  
-                <!-- IMAGE BLOCK -->
-                <div class="col-md-6 order-first order-md-2">
-                  <div class="img-block right-column wow fadeInLeft">
-                    <img class="img-fluid" src="images/Loyalty-Program-Section.png" alt="content-image" />
-                  </div>
+    <section id="menu-3" class="pt-100 ws-wrapper content-section">
+      <div class="container">
+        <div class="bc-1-wrapper bg--02 bg--fixed r-16">
+          <div class="section-overlay">
+            <div class="row d-flex align-items-center">
+              <!-- TEXT BLOCK -->
+              <div class="col-md-6 order-last order-md-2">
+                <div class="txt-block left-column wow fadeInRight">
+                  <!-- Section ID -->
+                  <span class="section-id">Strategies That Work</span>
+
+                  <!-- Title -->
+                  <h2 class="s-46 w-700 content3Menu3"></h2>
+
+                  <p class="content3Menu3Desc"></p>
                 </div>
               </div>
-              <!-- End row -->
+              <!-- END TEXT BLOCK -->
+
+              <!-- IMAGE BLOCK -->
+              <div class="col-md-6 order-first order-md-2">
+                <div class="img-block right-column wow fadeInLeft">
+                  <img class="img-fluid" src="images/Loyalty-Program-Section.png" alt="content-image" />
+                </div>
+              </div>
             </div>
-            <!-- End section overlay -->
+            <!-- End row -->
           </div>
-          <!-- End content wrapper -->
+          <!-- End section overlay -->
         </div>
-        <!-- End container -->
-      </section>
-      <!-- END BOX CONTENT -->
-  
-      <!-- TEXT CONTENT
+        <!-- End content wrapper -->
+      </div>
+      <!-- End container -->
+    </section>
+    <!-- END BOX CONTENT -->
+
+    <!-- TEXT CONTENT
         ============================================= -->
-      <section id="menu-4" class="pt-100 ct-02 content-section division">
-        <div class="container">
-          <!-- SECTION CONTENT (ROW) -->
-          <div class="row d-flex align-items-center">
-            <!-- IMAGE BLOCK -->
-            <div class="col-md-6">
-              <div class="img-block left-column wow fadeInRight">
-                <img class="img-fluid" src="images/Report-Analytics-Section.png" alt="content-image" />
-              </div>
+    <section id="menu-4" class="pt-100 ct-02 content-section division">
+      <div class="container">
+        <!-- SECTION CONTENT (ROW) -->
+        <div class="row d-flex align-items-center">
+          <!-- IMAGE BLOCK -->
+          <div class="col-md-6">
+            <div class="img-block left-column wow fadeInRight">
+              <img class="img-fluid" src="images/Report-Analytics-Section.png" alt="content-image" />
             </div>
-  
-            <!-- TEXT BLOCK -->
-            <div class="col-md-6">
-              <div class="txt-block right-column wow fadeInLeft">
-                <!-- Section ID -->
-                <span class="section-id">Automatic Workflows</span>
-  
-                <!-- Title -->
-                <h2 class="s-46 w-700 content3Menu4"></h2>
-  
-                <!-- Text -->
-                <p id="content3Menu4Desc"></p>
-              </div>
-            </div>
-            <!-- END TEXT BLOCK -->
           </div>
-          <!-- END SECTION CONTENT (ROW) -->
+
+          <!-- TEXT BLOCK -->
+          <div class="col-md-6">
+            <div class="txt-block right-column wow fadeInLeft">
+              <!-- Section ID -->
+              <span class="section-id">Automatic Workflows</span>
+
+              <!-- Title -->
+              <h2 class="s-46 w-700 content3Menu4"></h2>
+
+              <!-- Text -->
+              <p class="content3Menu4Desc"></p>
+            </div>
+          </div>
+          <!-- END TEXT BLOCK -->
         </div>
-        <!-- End container -->
-      </section>
-      <!-- END TEXT CONTENT -->
-   
+        <!-- END SECTION CONTENT (ROW) -->
+      </div>
+      <!-- End container -->
+    </section>
+    <!-- END TEXT CONTENT -->
+
     <!-- DIVIDER LINE -->
 
     <!-- TEXT CONTENT
 			============================================= -->
-    <section id="pricing-1" class="gr--whitesmoke pb-40 inner-page-hero pricing-section" style="padding-top: 50px !important;">
+    <section id="pricing-1" class="gr--whitesmoke pb-40 inner-page-hero pricing-section"
+      style="padding-top: 50px !important;">
       <div class="container">
 
 
@@ -782,7 +783,7 @@
                     </div>
 
                     <!-- Text -->
-                    <p class="color--grey">
+                    <p class="color--grey" style="min-height: 155px !important;">
                       Designed for those just starting out,
                       offering essential reporting tools
                       to track your business performance
@@ -796,7 +797,7 @@
 
 
                 <!-- PRICING FEATURES -->
-                <ul class="pricing-features color--black ico-10 ico--green mt-25"  style="min-height: 355px !important;">
+                <ul class="pricing-features color--black ico-10 ico--green mt-25">
                   <li>
                     <p><span class="flaticon-check"></span> Mobile Booking</p>
                   </li>
@@ -862,7 +863,7 @@
                     </div>
 
                     <!-- Text -->
-                    <p class="color--grey">
+                    <p class="color--grey" style="min-height: 155px !important;">
                       Perfect for businesses looking to deepen customer relationships,
                       offering advanced CRM tools
                       to personalize interactions
@@ -942,7 +943,7 @@
                     </div>
 
                     <!-- Text -->
-                    <p class="color--grey">
+                    <p class="color--grey" style="min-height: 155px !important;">
                       Designed for ambitious owners
                       who prioritize efficiency and growth, providing powerful tools
                       and insights to propel your business to new heights.
@@ -1233,12 +1234,12 @@
     <hr class="divider" style="margin-top: 60px !important; margin-bottom: 60px !important;" />
 
     <section id="contact-us" class="newsletter-section">
-      <div class="newsletter-overlay">
+      <!-- <div class="newsletter-overlay">
         <div class="container">
           <div class="row d-flex align-items-center row-cols-1 row-cols-lg-2">
 
 
-            <!-- NEWSLETTER TEXT -->
+            
             <div class="col">
               <div class="txt-block">
                 <h4 class="s-46 w-700">Ready to grow your bussiness </h4>
@@ -1249,33 +1250,120 @@
             </div>
 
 
-            <!-- NEWSLETTER FORM -->
+            
             <div class="col">
               <form class="newsletter-form" novalidate="true">
 
-                <input type="text" autocomplete="off" class="form-control mt-2" placeholder="Name" required=""
-                  name="name">
-                <input type="number" autocomplete="off" class="form-control mt-2" placeholder="Phone No" required=""
-                  name="name">
-                <input type="text" autocomplete="off" class="form-control mt-2" placeholder="Business Name" required=""
-                  name="name">
-                <input type="text" autocomplete="off" class="form-control mt-2" placeholder="Business Category"
-                  required="" name="name">
-                <input type="text" autocomplete="off" class="form-control mt-2" placeholder="Business Location"
-                  required="" name="name">
-                <input type="email" autocomplete="off" class="form-control mt-2" placeholder="Your email address"
-                  required="" name="EMAIL">
+               
+                
+               
+               
+               
 
-                <!-- Newsletter Form Notification -->
+                
                 <label for="s-email" class="form-notification"></label>
 
               </form>
-            </div> <!-- END NEWSLETTER FORM -->
+            </div> 
 
 
-          </div> <!-- End row -->
-        </div> <!-- End container -->
-      </div> <!-- End newsletter-overlay -->
+          </div>
+        </div> 
+      </div> -->
+      <div id="signup">
+
+        <div class="container">
+          <div class="register-page-wrapper r-16 bg--fixed">
+            <div class="row">
+              <!-- SIGN UP FORM -->
+              <div class="col-md-6">
+                <div class="register-page-form">
+                  <form name="signupform" class="row sign-up-form">
+
+
+                    <!-- Form Input -->
+                    <div class="col-md-12">
+                      <p class="p-sm input-header">Full name</p>
+                      <input type="text" autocomplete="off" class="form-control" placeholder="Name" required=""
+                        name="name">
+                    </div>
+
+                    <!-- Form Input -->
+                    <div class="col-md-12">
+                      <p class="p-sm input-header">Phone</p>
+                      <input type="number" autocomplete="off" class="form-control mt-2" placeholder="Phone No"
+                        required="" name="name">
+                    </div>
+
+                    <!-- Form Input -->
+                    <div class="col-md-12">
+                      <p class="p-sm input-header">Bussiness Name</p>
+                      <input type="text" autocomplete="off" class="form-control mt-2" placeholder="Business Name"
+                        required="" name="name">
+                    </div>
+                    <!-- Form Input -->
+                    <div class="col-md-12">
+                      <p class="p-sm input-header">Business Category</p>
+                      <input type="text" autocomplete="off" class="form-control mt-2" placeholder="Business Category"
+                        required="" name="name">
+                    </div>
+                    <!-- Form Input -->
+                    <div class="col-md-12">
+                      <p class="p-sm input-header">Business Location</p>
+
+                      <input type="text" autocomplete="off" class="form-control mt-2" placeholder="Business Location"
+                        required="" name="name">
+                    </div>
+                    <div class="col-md-12">
+                      <p class="p-sm input-header">Email Address</p>
+
+                      <input type="email" autocomplete="off" class="form-control mt-2" placeholder="Your email address"
+                      required="" name="EMAIL">
+                    </div>
+
+
+
+                    <!-- Form Submit Button -->
+                    <div class="col-md-12">
+                      <button type="submit" class="btn btn--theme hover--theme submit">Create Account</button>
+                    </div>
+
+
+                  </form>
+                </div>
+              </div> <!-- END SIGN UP FORM -->
+
+
+              <!-- SIGN UP PAGE TEXT -->
+              <div class="col-md-6">
+                <div class="register-page-txt color--white">
+
+
+                  <!-- Section ID -->
+                  <span class="section-id">Start for free</span>
+
+                  <!-- Title -->
+                  <h2 class="s-48 w-700">Create</h2>
+                  <h2 class="s-48 w-700">an account</h2>
+
+                  <!-- Text -->
+                  <p class="p-md mt-25">Integer congue sagittis and velna augue egestas magna
+                    suscipit purus aliquam
+                  </p>
+
+                  <!-- Copyright -->
+                  <div class="register-page-copyright">
+                    <p class="p-sm"><span>All rights reserved. &copy; 2016 Minutes Barber</span></p>
+                  </div>
+
+                </div>
+              </div> <!-- END SIGN UP PAGE TEXT -->
+
+
+            </div> <!-- End row -->
+          </div> <!-- End register-page-wrapper -->
+        </div>
+      </div>
     </section>
 
 
@@ -1335,6 +1423,8 @@
   <script src="js/jquery.easing.js"></script>
   <script src="js/jquery.appear.js"></script>
   <script src="js/menu.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+
   <script src="js/pricing-toggle.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/request-form.js"></script>
@@ -1372,6 +1462,8 @@
     localStorage.setItem(key, "EN");
     $("#id-lang").removeClass("active");
     $("#en-lang").addClass("active");
+    
+    $("#language").html('ENGLISH');
     localStorage.setItem(key, "EN");
     $.getJSON("data_en.json", function (data) {
       setLanguage(data);
@@ -1382,6 +1474,7 @@
     localStorage.setItem(key, "ID");
     $("#id-lang").addClass("active");
     $("#en-lang").removeClass("active");
+    $("#language").html('INDONESIAN');
     $.getJSON("data_id.json", function (data) {
       setLanguage(data);
     }).catch((error) => console.error("Error fetching JSON:", error));
@@ -1410,6 +1503,11 @@
     $("#content3Menu3Desc").html(data.content3Menu3Desc);
     $("#content3Menu4Desc").html(data.content3Menu4Desc);
     $("#content3Menu5Desc").html(data.content3Menu5Desc);
+    $(".content3Menu1Desc").html(data.content3Menu1Desc);
+    $(".content3Menu2Desc").html(data.content3Menu2Desc);
+    $(".content3Menu3Desc").html(data.content3Menu3Desc);
+    $(".content3Menu4Desc").html(data.content3Menu4Desc);
+    $(".content3Menu5Desc").html(data.content3Menu5Desc);
     $(".contact-1").html(data.contact1);
     $(".contact-2").html(data.contact2);
     $(".menu-1").html(data.menu1);
